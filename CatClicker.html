@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cat Clicker</title>
+  <meta name="description" content="Cat Clicker">
+  <meta name="author" content="Jonathan Dunder">
+
+  <!--link rel="stylesheet" href="css/styles.css?v=1.0"-->
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+  <div id="catPicture">
+  <img src="cat.jpg" />
+  </div>
+  <div><h1>Heinrich</h1>
+  <div>
+  <h1 id="clickCount">0</h1>
+  </div>
+  <div id="catPicture2">
+  <img src="cat2.jpg" />
+  </div>
+  <div><h1>Fatty</h1>
+  <div>
+  <h1 id="clickCount2">0</h1>
+  </div>
+  <script>	
+	$('#catPicture').click(function(e) {
+		//the element has been clicked... do stuff here
+		counter = $('#clickCount').text();
+		counter++;
+		$('#clickCount').text(counter);
+	});
+	
+	$('#catPicture2').click(function(e) {
+		//the element has been clicked... do stuff here
+		counter = $('#clickCount2').text();
+		counter++;
+		$('#clickCount2').text(counter);
+	});
+  </script>
+</body>
+</html>
+
+
